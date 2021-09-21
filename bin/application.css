@@ -9,3 +9,7 @@
     -fx-border-radius: 8px;
     -fx-font-size: 22px;
 }
+
+.inputTexto{
+    -fx-background-radius: 8px;
+}
