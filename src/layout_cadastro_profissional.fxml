@@ -62,27 +62,27 @@
                         <Image url="@imgs/download.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="93.0" layoutY="90.0" text="Paciente">
+                  <Label layoutX="93.0" layoutY="90.0" text="Profissional">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="158.0" layoutY="161.0" text="Informações Pessoais:">
+                  <Label layoutX="158.0" layoutY="161.0" prefHeight="35.0" prefWidth="320.0" text="Informações Pessoais:">
                      <font>
                         <Font name="Comic Sans MS" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="158.0" layoutY="212.0" text="Nome Completo">
+                  <Label layoutX="155.0" layoutY="197.0" text="Nome Completo">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="158.0" layoutY="252.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
-                  <TextField layoutX="158.0" layoutY="538.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
-                  <TextField layoutX="701.0" layoutY="252.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
-                  <TextField layoutX="158.0" layoutY="395.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
-                  <TextField layoutX="701.0" layoutY="395.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
-                  <Button layoutX="702.0" layoutY="538.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="427.0" text="Salvar">
+                  <TextField layoutX="155.0" layoutY="237.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
+                  <TextField layoutX="155.0" layoutY="501.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
+                  <TextField layoutX="701.0" layoutY="237.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
+                  <TextField layoutX="155.0" layoutY="369.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
+                  <TextField layoutX="701.0" layoutY="369.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
+                  <Button layoutX="698.0" layoutY="625.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="427.0" text="Salvar">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
@@ -92,24 +92,36 @@
                         <Image url="@imgs/93634.png" />
                      </image>
                   </ImageView>
+                  <TextField layoutX="155.0" layoutY="625.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
+                  <Label layoutX="155.0" layoutY="585.0" text="Confirmar Senha">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="698.0" layoutY="501.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
+                  <Label layoutX="698.0" layoutY="453.0" text="Confirmar Senha">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
-            <Label layoutX="158.0" layoutY="355.0" text="CPF do Paciente">
+            <Label layoutX="155.0" layoutY="329.0" text="CPF do Profissional">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="158.0" layoutY="498.0" text="Tipo Sanguíneo">
+            <Label layoutX="155.0" layoutY="453.0" text="Senha">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="701.0" layoutY="212.0" text="Email">
+            <Label layoutX="701.0" layoutY="197.0" text="Matrícula">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="701.0" layoutY="347.0" text="Telefone">
+            <Label layoutX="701.0" layoutY="329.0" text="Cargo">
                <font>
                   <Font size="24.0" />
                </font>

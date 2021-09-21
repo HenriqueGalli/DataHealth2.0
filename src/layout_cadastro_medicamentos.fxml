@@ -62,17 +62,17 @@
                         <Image url="@imgs/download.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="93.0" layoutY="90.0" text="Paciente">
+                  <Label layoutX="93.0" layoutY="90.0" text="Medicamentos">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="158.0" layoutY="161.0" text="Informações Pessoais:">
+                  <Label layoutX="158.0" layoutY="161.0" prefHeight="35.0" prefWidth="320.0" text="Informações Medicamentos">
                      <font>
                         <Font name="Comic Sans MS" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="158.0" layoutY="212.0" text="Nome Completo">
+                  <Label layoutX="158.0" layoutY="212.0" text="Nome Comercial  ">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -94,22 +94,22 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <Label layoutX="158.0" layoutY="355.0" text="CPF do Paciente">
+            <Label layoutX="158.0" layoutY="355.0" text="Data da Prescrição">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="158.0" layoutY="498.0" text="Tipo Sanguíneo">
+            <Label layoutX="158.0" layoutY="498.0" text="Link da Bula">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="701.0" layoutY="212.0" text="Email">
+            <Label layoutX="701.0" layoutY="212.0" text="Nome Genérico">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="701.0" layoutY="347.0" text="Telefone">
+            <Label layoutX="701.0" layoutY="347.0" text="CRM Médico">
                <font>
                   <Font size="24.0" />
                </font>
