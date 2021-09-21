@@ -42,10 +42,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
+         <children>
             <AnchorPane prefHeight="768.0" prefWidth="1280.0" styleClass="anchor">
                <stylesheets>
                   <URL value="@application.css" />
@@ -66,34 +66,44 @@
                         <Font name="Comic Sans MS" size="18.0" />
                      </font>
                   </Button>
-                  <Label layoutX="133.0" layoutY="174.0" text="Lista de Medicamentos cadastrados para nomePessoa:">
+                  <Label layoutX="133.0" layoutY="174.0" text="Lista de Medicamentos cadastrados:">
                      <font>
                         <Font name="Comic Sans MS" size="24.0" />
                      </font>
                   </Label>
-                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="133.0" layoutY="245.0" prefHeight="292.0" prefWidth="231.0" text="Nome Comercial">
-                    <content>
-                      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="240.0" />
-                    </content>
-                  </TitledPane>
-                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="375.0" layoutY="245.0" prefHeight="292.0" prefWidth="231.0" text="Nome Genérico">
+                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="228.0" layoutY="244.0" prefHeight="292.0" prefWidth="231.0" text="Nome Comercial">
                      <content>
                         <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="240.0" />
                      </content>
                   </TitledPane>
-                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="617.0" layoutY="245.0" prefHeight="292.0" prefWidth="231.0" text="Data Prescrição">
+                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="470.0" layoutY="244.0" prefHeight="292.0" prefWidth="231.0" text="Nome Genérico">
                      <content>
                         <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="240.0" />
                      </content>
                   </TitledPane>
-                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="859.0" layoutY="245.0" prefHeight="292.0" prefWidth="231.0" text="CRM Médico">
+                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="712.0" layoutY="244.0" prefHeight="292.0" prefWidth="231.0" text="Data Prescrição">
                      <content>
                         <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="240.0" />
+                     </content>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="954.0" layoutY="244.0" prefHeight="292.0" prefWidth="231.0" text="CRM Médico">
+                     <content>
+                        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="240.0" />
+                     </content>
+                  </TitledPane>
+                  <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="959.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/93634.png" />
+                     </image>
+                  </ImageView>
+                  <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="133.0" layoutY="244.0" prefHeight="389.0" prefWidth="95.0" text="Ações">
+                     <content>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="374.0" prefWidth="95.0" />
                      </content>
                   </TitledPane>
                </children>
             </AnchorPane>
-      </children>
+         </children>
     </AnchorPane>
   </children>
 </VBox>

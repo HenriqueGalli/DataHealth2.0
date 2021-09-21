@@ -79,13 +79,13 @@
                   <Font name="Comic Sans MS Italic" size="24.0" />
                </font>
             </Label>
-            <TextField layoutX="426.0" layoutY="254.0" prefHeight="35.0" prefWidth="407.0" />
+            <TextField layoutX="426.0" layoutY="254.0" prefHeight="35.0" prefWidth="407.0" styleClass="inputTexto" />
             <Button defaultButton="true" layoutX="427.0" layoutY="468.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="407.0" text="ENTRAR">
                <font>
                   <Font name="Comic Sans MS Bold" size="24.0" />
                </font>
             </Button>
-            <TextField layoutX="426.0" layoutY="367.0" prefHeight="35.0" prefWidth="407.0" />
+            <TextField layoutX="426.0" layoutY="367.0" prefHeight="35.0" prefWidth="407.0" styleClass="inputTexto" />
             <Line endX="306.0" layoutX="526.0" layoutY="167.0" startX="-100.0" stroke="#484646" strokeWidth="3.0" />
          </children>
     </AnchorPane>

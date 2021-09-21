@@ -43,7 +43,7 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<VBox prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="768.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
@@ -80,8 +80,8 @@
                </font>
             </Label>
             <Line endX="306.0" layoutX="537.0" layoutY="186.0" startX="-100.0" stroke="#484646" strokeWidth="3.0" />
-            <TextField layoutX="437.0" layoutY="284.0" prefHeight="35.0" prefWidth="407.0" />
-            <TextField layoutX="437.0" layoutY="396.0" prefHeight="35.0" prefWidth="407.0" />
+            <TextField layoutX="437.0" layoutY="284.0" prefHeight="35.0" prefWidth="407.0" styleClass="inputTexto" />
+            <TextField layoutX="437.0" layoutY="396.0" prefHeight="35.0" prefWidth="407.0" styleClass="inputTexto" />
             <Button defaultButton="true" layoutX="437.0" layoutY="506.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="407.0" text="ENTRAR">
                <font>
                   <Font name="Comic Sans MS Bold" size="24.0" />

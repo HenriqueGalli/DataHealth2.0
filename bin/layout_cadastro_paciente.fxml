@@ -82,7 +82,7 @@
                   <TextField layoutX="701.0" layoutY="252.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
                   <TextField layoutX="158.0" layoutY="395.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
                   <TextField layoutX="701.0" layoutY="395.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
-                  <Button layoutX="701.0" layoutY="528.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="427.0" text="Cadastrar">
+                  <Button layoutX="702.0" layoutY="538.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="427.0" text="Cadastrar">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
