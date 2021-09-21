@@ -51,6 +51,13 @@
                <stylesheets>
                   <URL value="@application.css" />
                </stylesheets>
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="306.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/93634.png" />
+                     </image>
+                  </ImageView>
+               </children>
             </AnchorPane>
             <ImageView fitHeight="60.0" fitWidth="405.0" layoutX="438.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -64,15 +71,15 @@
             </ImageView>
             <Label layoutX="438.0" layoutY="238.0" text="CPF do Paciente: " textFill="#484646">
                <font>
-                  <Font name="Comic Sans MS" size="24.0" />
+                  <Font name="Comic Sans MS Italic" size="24.0" />
                </font>
             </Label>
             <Label layoutX="438.0" layoutY="349.0" text="Senha:" textFill="#484646">
                <font>
-                  <Font name="Comic Sans MS" size="24.0" />
+                  <Font name="Comic Sans MS Italic" size="24.0" />
                </font>
             </Label>
-            <Line endX="306.0" layoutX="537.0" layoutY="186.0" startX="-100.0" />
+            <Line endX="306.0" layoutX="537.0" layoutY="186.0" startX="-100.0" stroke="#484646" strokeWidth="3.0" />
             <TextField layoutX="437.0" layoutY="284.0" prefHeight="35.0" prefWidth="407.0" />
             <TextField layoutX="437.0" layoutY="396.0" prefHeight="35.0" prefWidth="407.0" />
             <Button defaultButton="true" layoutX="437.0" layoutY="506.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="407.0" text="ENTRAR">
