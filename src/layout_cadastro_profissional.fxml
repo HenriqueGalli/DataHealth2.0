@@ -99,7 +99,7 @@
                      </font>
                   </Label>
                   <TextField layoutX="698.0" layoutY="501.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
-                  <Label layoutX="698.0" layoutY="453.0" text="Confirmar Senha">
+                  <Label layoutX="698.0" layoutY="453.0" text="Registro Profissional">
                      <font>
                         <Font size="24.0" />
                      </font>

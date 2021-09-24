@@ -35,6 +35,7 @@
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -82,7 +83,7 @@
                   <TextField layoutX="701.0" layoutY="252.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
                   <TextField layoutX="158.0" layoutY="395.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" />
                   <TextField layoutX="701.0" layoutY="395.0" prefHeight="51.0" prefWidth="427.0" styleClass="inputTexto" stylesheets="@application.css" />
-                  <Button layoutX="702.0" layoutY="538.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="427.0" text="Salvar">
+                  <Button layoutX="701.0" layoutY="640.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="427.0" text="Salvar">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
@@ -92,6 +93,12 @@
                         <Image url="@imgs/93634.png" />
                      </image>
                   </ImageView>
+                  <ComboBox layoutX="701.0" layoutY="538.0" prefHeight="51.0" prefWidth="427.0" />
+                  <Label layoutX="701.0" layoutY="498.0" text="Medicamento">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
             <Label layoutX="158.0" layoutY="355.0" text="CPF do Paciente">
