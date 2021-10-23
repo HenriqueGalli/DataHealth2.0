@@ -6,12 +6,14 @@ import java.util.ArrayList;
 
 import model.Entidade;
 import model.Medicamento;
+import model.Usuario;
 import model.UsuarioPaciente;
 
 public class PacienteDAO <E extends Entidade> extends DAO {
 
-    public PacienteDAO(Class entityClass) {
+    public PacienteDAO() {
         super(UsuarioPaciente.class);
+        setTabela("usuario_paciente");
     }
 
     @Override
@@ -34,7 +36,7 @@ public class PacienteDAO <E extends Entidade> extends DAO {
 
     @Override
     protected String getLocalizaCommand() {
-       return "select * from usuario_paciente where Cpf = ? ";
+       return "select * from usuario_paciente";
     }
     
 }

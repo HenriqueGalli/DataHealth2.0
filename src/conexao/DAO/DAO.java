@@ -13,7 +13,7 @@ import model.Entidade;
 public abstract class DAO <E extends Entidade> {
 
     protected Class<E> entityClass;
-    final String STRING_CONEXAO = "jdbc:mysql://localhost/mysample?useTimezone=true&serverTimezone=UTC";  
+    final String STRING_CONEXAO = "jdbc:mysql://localhost/datahealth_db?useTimezone=true&serverTimezone=UTC";  
     final String USUARIO = "root";  
     final String SENHA = "";
     private String tabela;
@@ -31,8 +31,9 @@ public abstract class DAO <E extends Entidade> {
         return null;
     }
 
-    public E localiza(String codigo) throws SQLException{
+    public E localiza(String codigo) throws SQLException, ClassNotFoundException{
         E entidade = null;
+        Class.forName("com.mysql.jdbc.Driver"); /* Aqui registra */
         try (Connection conexao = DriverManager.getConnection(STRING_CONEXAO, USUARIO, SENHA )) {
             String SQL = getLocalizaCommand();
             try (PreparedStatement stmt = conexao.prepareStatement(SQL)) {

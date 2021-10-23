@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch teste",
+            "request": "launch",
+            "mainClass": "conexao.DAO.teste",
+            "projectName": "DataHealth2.0_478f679b"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
