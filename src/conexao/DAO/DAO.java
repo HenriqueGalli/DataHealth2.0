@@ -1,5 +1,9 @@
 package conexao.DAO;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -9,14 +13,65 @@ import model.Entidade;
 public abstract class DAO <E extends Entidade> {
 
     protected Class<E> entityClass;
+    final String STRING_CONEXAO = "jdbc:mysql://localhost/mysample?useTimezone=true&serverTimezone=UTC";  
+    final String USUARIO = "root";  
+    final String SENHA = "";
+    private String tabela;
 
     public DAO(Class<E> entityClass){
         this.entityClass = entityClass;
     }
 
-    public abstract E seleciona(int id);
-    public abstract E localiza(String codigo) throws SQLException;
-    public abstract ArrayList<E> lista() throws SQLException;
+    protected void setTabela(String value){
+        tabela = value;
+    }
+
+    public E seleciona(int id){
+        // Não há retorno por id
+        return null;
+    }
+
+    public E localiza(String codigo) throws SQLException{
+        E entidade = null;
+        try (Connection conexao = DriverManager.getConnection(STRING_CONEXAO, USUARIO, SENHA )) {
+            String SQL = getLocalizaCommand();
+            try (PreparedStatement stmt = conexao.prepareStatement(SQL)) {
+                stmt.setString(1, codigo);
+                try (ResultSet rs = stmt.executeQuery()) {
+                    if (rs.first()){
+                        entidade = preencheEntidade(rs);
+                    }
+                }
+            }
+        }        
+        return entidade;
+    }
+    
+    protected abstract E preencheEntidade(ResultSet rs);
+
+    public ArrayList<E> lista() throws SQLException {
+        ArrayList<E> entidades = new ArrayList();
+        try (Connection conexao = DriverManager.getConnection(STRING_CONEXAO, USUARIO, SENHA)) {
+            System.out.println("Banco conectado!");
+            // ? => binding
+            String SQL = getListaCommand();
+            try (PreparedStatement stmt = conexao.prepareStatement(SQL)) {
+                try (ResultSet rs = stmt.executeQuery()) {
+                    while (rs.next()){
+                        E entidade = preencheEntidade(rs);
+                        entidades.add(entidade);
+                    }
+                }
+            }
+        }
+        return entidades;
+    }
+
+    protected String getListaCommand() {
+        return "select * from " + tabela;
+    }
+
+    protected abstract String getLocalizaCommand();
 
     protected E getInstanceOfE()
     {

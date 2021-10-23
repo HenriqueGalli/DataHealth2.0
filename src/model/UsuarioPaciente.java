@@ -1,6 +1,8 @@
 package model;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+
 
 import conexao.annotations.CampoNoBanco;
 
@@ -15,7 +17,11 @@ public class UsuarioPaciente extends Usuario{
     @CampoNoBanco(nome="Telefone", chave = false)
     String Telefone;
 
-    ArrayList<Medicamento> remedios;
+    ArrayList<Medicamento> Remedios;
+
+    public UsuarioPaciente(){
+        
+    }
 
     public UsuarioPaciente(String nome, String cpf, String senha, String tipoSanguineo,
                             String email, String telefone)
@@ -49,5 +55,13 @@ public class UsuarioPaciente extends Usuario{
 
     public void setTipoSanguineo(String tipoSanguineo) {
         this.TipoSanguineo = tipoSanguineo;
+    }
+
+    public ArrayList<Medicamento> getRemedios() {
+        return this.Remedios;
+    }
+
+    public void setRemedios(ArrayList<Medicamento> array) {
+        this.Remedios = array;
     }
 }
