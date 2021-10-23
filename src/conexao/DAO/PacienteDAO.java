@@ -36,7 +36,7 @@ public class PacienteDAO <E extends Entidade> extends DAO {
 
     @Override
     protected String getLocalizaCommand() {
-       return "select * from usuario_paciente";
+       return "select * from usuario_paciente where Cpf = ? ";
     }
     
 }
