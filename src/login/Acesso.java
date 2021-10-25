@@ -1,22 +1,21 @@
-package conexao.DAO;
+package login;
 
 import java.sql.SQLException;
-
-import javax.xml.crypto.Data;
-
-import model.Entidade;
+import conexao.DAO.DAO;
+import conexao.DAO.usuario.UsuarioDAOFactory;
 import model.Usuario;
-import model.UsuarioPaciente;
 
-public class acesso {
+public class Acesso {
   private boolean validaSenha(String senhaRepositorio, String senhaDigitada) {
     return (senhaRepositorio.equals(senhaDigitada));
   }
 
   public boolean validaUsuario(Usuario user) throws SQLException, ClassNotFoundException {
     boolean retorno = false;
-    DAO teste = new PacienteDAO<>();
-    Usuario usuario = (Usuario)teste.localiza(user.getCpf());
+
+    DAO dao = UsuarioDAOFactory.factory(user);
+  
+    Usuario usuario = (Usuario)dao.localiza(user.getCpf());
     if (usuario != null) {
       retorno = validaSenha(usuario.getSenha(), user.getSenha());
     }

@@ -8,13 +8,13 @@ public class UsuarioProfissional extends Usuario{
     String Matricula;
 
     @CampoNoBanco(nome="Cargo", chave = false)
-    Cargo Cargo;
+    String Cargo;
 
     @CampoNoBanco(nome="RegistroProfissional", chave = false)
     String RegistroProfissional;
 
     public UsuarioProfissional(String nome, String cpf, String senha, 
-                            String matricula, Cargo cargo, String registroProfissional )
+                            String matricula, String cargo, String registroProfissional )
     {
         this.Nome = nome;
         this.Senha = senha;
@@ -22,6 +22,9 @@ public class UsuarioProfissional extends Usuario{
         this.Cargo = cargo;
         this.Matricula = matricula;
         this.RegistroProfissional = registroProfissional;
+    }
+
+    public UsuarioProfissional() {
     }
 
     public enum Cargo {
@@ -36,11 +39,11 @@ public class UsuarioProfissional extends Usuario{
         this.Matricula = matricula;
     }
 
-    public Cargo getCargo() {
+    public String getCargo() {
 		return this.Cargo;
 	}
 
-    public void setCargo(Cargo cargo ) {
+    public void setCargo(String cargo ) {
 		this.Cargo = cargo;
 	}
 

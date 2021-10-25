@@ -1,12 +1,12 @@
-package conexao.DAO;
+package conexao.DAO.usuario;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import conexao.DAO.DAO;
 import model.Entidade;
 import model.Medicamento;
-import model.Usuario;
 import model.UsuarioPaciente;
 
 public class PacienteDAO <E extends Entidade> extends DAO {
@@ -29,7 +29,7 @@ public class PacienteDAO <E extends Entidade> extends DAO {
             entidade.setTipoSanguineo(rs.getString("TipoSanguineo"));
             entidade.setRemedios((ArrayList<Medicamento>) rs.getArray("Remedios"));
         }catch(SQLException e){
-            //deu ruim
+            e.printStackTrace();
         }
         return (E)entidade;
     }

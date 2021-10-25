@@ -1,9 +1,6 @@
 package model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-
-
 import conexao.annotations.CampoNoBanco;
 
 public class UsuarioPaciente extends Usuario{

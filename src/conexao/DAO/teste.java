@@ -1,14 +1,16 @@
 package conexao.DAO;
 
-import model.Usuario;
-import model.UsuarioPaciente;
+import login.Acesso;
+import model.UsuarioProfissional;
 
 public class teste {
   public static void main(String[] args) throws Exception {
-    acesso acesso = new acesso();
-    UsuarioPaciente user = new UsuarioPaciente();
-    user.setCpf("44283147877");
-    user.setSenha("123456");
+    Acesso acesso = new Acesso();
+    UsuarioProfissional user = new UsuarioProfissional();
+    user.setCpf("48608042878");
+    user.setSenha("12345");
     Boolean senhaValida = acesso.validaUsuario(user);
+
+    System.out.println("Finalizei o resultado é:" +senhaValida);
   }
 }
