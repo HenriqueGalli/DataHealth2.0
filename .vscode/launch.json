@@ -9,6 +9,13 @@
             "name": "Launch teste",
             "request": "launch",
             "mainClass": "conexao.DAO.teste",
+            "projectName": "DataHealth2.0_93f3ac69"
+        },
+        {
+            "type": "java",
+            "name": "Launch teste",
+            "request": "launch",
+            "mainClass": "conexao.DAO.teste",
             "projectName": "DataHealth2.0_97cbc9b3"
         },
         {
