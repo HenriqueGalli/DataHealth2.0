@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TelaLoginPaciente",
+            "request": "launch",
+            "mainClass": "ApplicationInterface.TelaLoginPaciente",
+            "projectName": "DataHealth2.0_93f3ac69"
+        },
+        {
+            "type": "java",
             "name": "Launch teste",
             "request": "launch",
             "mainClass": "conexao.DAO.teste",
@@ -37,7 +44,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "DataHealth_3900f821",
-            "vmArgs": "--module-path \"C:/JavaProjects/JavaLibs/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/ProjetosJava/Libs/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

@@ -13,10 +13,27 @@
             "c:\\JavaProjects\\JavaLibs\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
             "c:\\JavaProjects\\JavaLibs\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar",
             "c:\\Users\\galli\\Downloads\\mysql-connector.jar",
-            "c:\\ProjetosJava\\mysql-connector.jar"
+            "c:\\ProjetosJava\\mysql-connector.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.base.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.controls.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.fxml.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.graphics.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.media.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.swing.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx.web.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar",
+            "c:\\ProjetosJava\\Libs\\mysql-connector.jar"
         ],
         "exclude": [
-            "c:\\Program Files (x86)\\MySQL\\Connector J 8.0\\mysql-connector-java-8.0.27.jar"
+            "c:\\Program Files (x86)\\MySQL\\Connector J 8.0\\mysql-connector-java-8.0.27.jar",
+            "c:\\ProjetosJava\\Libs\\javafx-sdk-17.0.1\\lib\\javafx-swt.jar"
         ]
     }
 }
