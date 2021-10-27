@@ -12,9 +12,9 @@ import model.Entidade;
 public abstract class DAO<E extends Entidade> {
 
     protected Class<E> entityClass;
-    final String STRING_CONEXAO = "jdbc:mysql://localhost/datahealth_db?useTimezone=true&serverTimezone=UTC";
-    final String USUARIO = "root";
-    final String SENHA = "";
+    protected final String STRING_CONEXAO = "jdbc:mysql://localhost/datahealth_db?useTimezone=true&serverTimezone=UTC";
+    protected final String USUARIO = "root";
+    protected final String SENHA = "";
     private String tabela;
 
     public DAO(Class<E> entityClass) {
@@ -67,31 +67,11 @@ public abstract class DAO<E extends Entidade> {
         return entidades;
     }
 
-    public void Inserir(String NomePaciente, String Cpf, String TipoSanguineo, String Email, String Telefone,
-            String Senha) throws SQLException, ClassNotFoundException {
-        String retorno = "";
-        Class.forName("com.mysql.jdbc.Driver"); /* Aqui registra */
-        try (Connection conexao = DriverManager.getConnection(STRING_CONEXAO, USUARIO, SENHA)) {
-            String SQL = getInserirPaciente();
-            try (PreparedStatement stmt = conexao.prepareStatement(SQL)) {
-                stmt.setString(1, NomePaciente);
-                stmt.setString(2, Cpf);
-                stmt.setString(3, TipoSanguineo);
-                stmt.setString(4, Email);
-                stmt.setString(5, Telefone);
-                stmt.setString(6, Senha);
-                stmt.executeUpdate();
-            }
-        }
-    }
-
     protected String getListaCommand() {
         return "select * from " + tabela;
     }
 
-    protected String getInserirPaciente() {
-        return "insert into usuario_paciente (Nome, Cpf, TipoSanguineo, Email, Telefone, Senha) values (?, ?, ?, ?, ?, ?)";
-    }
+
 
     protected abstract String getLocalizaCommand();
 
