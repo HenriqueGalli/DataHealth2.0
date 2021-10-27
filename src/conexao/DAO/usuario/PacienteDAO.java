@@ -27,7 +27,7 @@ public class PacienteDAO <E extends Entidade> extends DAO {
             entidade.setEmail(rs.getString("Email"));
             entidade.setTelefone(rs.getString("Telefone"));
             entidade.setTipoSanguineo(rs.getString("TipoSanguineo"));
-            entidade.setRemedios((ArrayList<Medicamento>) rs.getArray("Remedios"));
+            //entidade.setRemedios((ArrayList<Medicamento>) rs.getArray("Remedios"));
         }catch(SQLException e){
             e.printStackTrace();
         }

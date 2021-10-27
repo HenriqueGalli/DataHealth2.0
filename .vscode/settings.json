@@ -29,7 +29,8 @@
             "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
             "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
             "c:\\ProjetosJava\\Libs\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar",
-            "c:\\ProjetosJava\\Libs\\mysql-connector.jar"
+            "c:\\ProjetosJava\\Libs\\mysql-connector.jar",
+            "Attachments/mysql-connector.jar"
         ],
         "exclude": [
             "c:\\Program Files (x86)\\MySQL\\Connector J 8.0\\mysql-connector-java-8.0.27.jar",

@@ -1,4 +1,4 @@
-package ApplicationInterface;
+/* package ApplicationInterface;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -32,3 +32,4 @@ public class TelaLoginPaciente extends Application {
     }
     
 }
+ */
