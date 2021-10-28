@@ -18,13 +18,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layout_login_paciente.fxml"));
-        Parent root = fxmlLoader.load();
-        Scene tela = new Scene(root);
-
-        primaryStage.setTitle("Tela de Login Paciente");
-        primaryStage.setScene(tela);
+        Parent root = FXMLLoader.load(getClass().getResource("/layouts/layout_home_login.fxml"));
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Tela Home");
         primaryStage.show();
     }
 }
