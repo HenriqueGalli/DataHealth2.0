@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import model.Entidade;
+import model.Usuario;
 
 public abstract class DAO<E extends Entidade> {
 
@@ -15,7 +16,7 @@ public abstract class DAO<E extends Entidade> {
     protected final String STRING_CONEXAO = "jdbc:mysql://localhost/datahealth_db?useTimezone=true&serverTimezone=UTC";
     protected final String USUARIO = "root";
     protected final String SENHA = "";
-    private String tabela;
+    protected String tabela;
 
     public DAO(Class<E> entityClass) {
         this.entityClass = entityClass;
@@ -47,6 +48,8 @@ public abstract class DAO<E extends Entidade> {
         return entidade;
     }
 
+    public abstract void Inserir(Usuario paciente) throws SQLException, ClassNotFoundException;
+
     protected abstract E preencheEntidade(ResultSet rs);
 
     public ArrayList<E> lista() throws SQLException {
@@ -70,8 +73,6 @@ public abstract class DAO<E extends Entidade> {
     protected String getListaCommand() {
         return "select * from " + tabela;
     }
-
-
 
     protected abstract String getLocalizaCommand();
 

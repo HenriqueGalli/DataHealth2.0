@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import conexao.DAO.DAO;
 import model.Entidade;
 import model.Medicamento;
+import model.Usuario;
 import model.UsuarioPaciente;
 
 public class PacienteDAO<E extends Entidade> extends DAO {
@@ -38,7 +39,9 @@ public class PacienteDAO<E extends Entidade> extends DAO {
         return (E) entidade;
     }
 
-    public void Inserir(UsuarioPaciente paciente) throws SQLException, ClassNotFoundException {
+    @Override
+    public void Inserir(Usuario usuario) throws SQLException, ClassNotFoundException {
+        UsuarioPaciente paciente = (UsuarioPaciente)usuario;
         Class.forName("com.mysql.jdbc.Driver"); /* Aqui registra */
         try (Connection conexao = (Connection) DriverManager.getConnection(STRING_CONEXAO, USUARIO, SENHA)) {
             String SQL = getInserirPaciente();
@@ -60,7 +63,8 @@ public class PacienteDAO<E extends Entidade> extends DAO {
     }
 
     protected String getInserirPaciente() {
-        return "insert into usuario_paciente (Nome, Cpf, TipoSanguineo, Email, Telefone, Senha) values (?, ?, ?, ?, ?, ?)";
+        return "insert into "+ tabela +" (Nome, Cpf, TipoSanguineo, Email, Telefone, Senha) values (?, ?, ?, ?, ?, ?)";
     }
+
 
 }
