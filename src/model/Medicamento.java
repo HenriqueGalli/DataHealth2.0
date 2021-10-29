@@ -1,6 +1,6 @@
 package model;
 
-public class Medicamento {
+public class Medicamento extends Entidade{
     String NomeComercial;
     String NomeGenerico;
     String LinkBula;
@@ -9,6 +9,9 @@ public class Medicamento {
         this.NomeComercial = nomeComercial;
         this.NomeGenerico = nomeGenerico;
         this.LinkBula = linkBula;
+    }
+
+    public Medicamento() {
     }
 
     public String getNomeComercial() {
