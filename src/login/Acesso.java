@@ -14,7 +14,6 @@ public class Acesso {
     boolean retorno = false;
 
     DAO dao = UsuarioDAOFactory.factory(user);
-    dao.Inserir("Testes", "44283147878", "O-", "Re@mail.com", "11981259699", "123456");
   
     Usuario usuario = (Usuario)dao.localiza(user.getCpf());
     if (usuario != null) {
